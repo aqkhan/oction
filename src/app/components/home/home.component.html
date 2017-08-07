@@ -1,0 +1,23 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">A Gamechanging Shopping Experience.</h1>
+    <p class="lead text-muted">Score trending electronics, fashion must-haves, accessories, and more at incredibly low prices! Download Oction now – for free!</p>
+    <p>
+      <a href="#" class="btn btn-primary">Signup</a>
+      <a href="#" class="btn btn-secondary">Login</a>
+    </p>
+  </div>
+</section>
+<div class="album text-muted">
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let product of products" class="card">
+        <div routerLink="/product/{{product.id}}" class="clickme">
+          <img data-src="{{product.img}}" alt="{{product.img}}">
+          <h3>{{product.name}}</h3>
+          <p class="card-text">{{product.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
