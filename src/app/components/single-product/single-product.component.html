@@ -1,22 +1,24 @@
 <section class="jumbotron text-center">
   <div class="container">
-    <h1 class="jumbotron-heading">00:00:00</h1>
+    <h1 class="jumbotron-heading">{{_days}} <small>days</small> : {{_minutes}} <small>minutes</small> : {{_seconds}} <small>seconds</small></h1>
     <p class="lead text-muted">Score trending electronics, fashion must-haves, accessories, and more at incredibly low prices! Download Oction now – for free!</p>
     <p>
-      <a routerLink="/product/12" class="btn btn-primary">Signup</a>
-      <a href="#" class="btn btn-secondary">Login</a>
+      <a routerLink="/product/12" class="btn btn-success">Bid now</a>
+      <a href="#" class="btn btn-secondary">Buy Credit</a>
     </p>
   </div>
 </section>
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-5">
-      <img src="{{product.img}}" class="img-fluid" alt="{{product.title}}">
-    </div>
-    <div class="col-md-7">
-      <h3>{{product.name}}</h3>
-      <p><strong>Price: </strong> ${{product.price}}</p>
-      <p><strong>Description: </strong> <small>{{product.description}}</small></p>
+<div class="album text-muted">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-5 card">
+        <img src="{{product.img}}" class="img-fluid" alt="{{product.name}}">
+      </div>
+      <div class="col-md-7 card">
+        <h3>{{product.name}}</h3>
+        <p><strong>Price: </strong> ${{product.price}}</p>
+        <p><strong>Description: </strong> <small>{{product.description}}</small></p>
+      </div>
     </div>
   </div>
 </div>
