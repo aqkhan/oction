@@ -1,6 +1,6 @@
 # Oction
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
+This project is an exhibition of listing and single page feature of Oction.
 
 ## Development server
 
